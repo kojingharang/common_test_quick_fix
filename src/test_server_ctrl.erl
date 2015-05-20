@@ -450,7 +450,6 @@ add_job(Name, TopCase) ->
     add_job(Name, TopCase, []).
 
 add_job(Name, TopCase, Skip) ->
-    io:format("############################## ~p~n", [{add_job, Name, TopCase, Skip}]),
     SuiteName =
 	case Name of
 	    "." -> "current_dir";

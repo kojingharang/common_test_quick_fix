@@ -3,7 +3,8 @@ DIALYZER_OPTS=-Werror_handling -Wrace_conditions -Wunmatched_returns
 
 LIBS=$(ERL_LIBS):deps
 
-all: init compile xref eunit ct edoc dialyze
+# all: init compile xref eunit ct edoc dialyze
+all: init compile
 
 init:
 	@./rebar get-deps compile

@@ -447,7 +447,7 @@ run_test_case_apply({CaseNum,Mod,Func,Args,Name,
 
 run_test_case_apply(Mod, Func, Args, Name, RunInit, TimetrapData) ->
     print_timestamp(minor,"Started at "),
-    print(minor, "<xmp>", [], internal_raw),
+    print(minor, "", [], internal_raw),
     TCCallback = get(test_server_testcase_callback),
     LogOpts = get(test_server_logopts),
     Ref = make_ref(),
